@@ -5,50 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
-    <style>
-        body {
-            background-color: rgb(255, 252, 252);
-        }
-
-        #enviar {
-            display: block;
-            margin: auto;
-        }
-
-        #cdst {
-            color: white;
-            text-align: center;
-            font-size: 29pt;
-            text-shadow: 1px 2px 1px black;
-            font-weight: bold;
-            padding: 3rem;
-            background-color: rgb(54, 53, 53);
-        }
-
-        #box {
-            display: block;
-            margin: auto;
-            margin-bottom: 1rem;
-            background-color: rgba(194, 189, 189, 0.6);
-            width: 80vw;
-            border-radius: 0.8rem;
-        }
-
-        label {
-            font-weight: bold;
-        }
-
-
-    </style>
+    <link rel="shortcut icon" href="logoIEMA.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
     <title>IEMA</title>
 </head>
 <body>
-    <h2 id="cdst">Cadastro de Candidato</h2>
+    <header>
+        <h2 id="cdst">Cadastro</h2>
+    </header>
     <div id="box">
         <div class="container">
             <hr>
-            <form class="p-3" action="">
+            <form class="p-3" action="" method="">
                 <div class="my-3">
                     <label class="form-label" for="">Nome Completo:</label>
                     <input class="form-control" type="text" name="nome" id="nome">
@@ -63,7 +31,7 @@
                         <input class="form-control" type="number" name="cpf" id="cpf">
                     </div>
                 </div>
-                <div class="row">
+                <!--<div class="row">
                     <div class="my-3 col">
                         <label class="form-label" class="form-label" for="">Rua:</label>
                         <input class="form-control" type="text" name="rua" id="rua">
@@ -72,7 +40,7 @@
                         <label class="form-label" for="">Bairro:</label>
                         <input class="form-control" type="text" name="bairro" id="bairro">
                     </div>
-                </div>
+                </div>-->
                 <div class="my-3">
                     <label class="form-label" for="">CEP:</label>
                     <input class="form-control" type="number" name="cep" id="cep">
@@ -81,22 +49,42 @@
                     <label class="form-label" for="">Email:</label>
                     <input class="form-control" type="email" name="email" id="email">
                 </div>
-                <div class="row">
-                    <div class="my-3 col">
-                        <label class="form-label" for="">Telefone Fixo:</label>
-                        <input class="form-control" type="number" name="telefone" id="telefone">
-                    </div>
-                    <div class="my-3 col">
-                        <label class="form-label" for="">Celular:</label>
-                        <input class="form-control" type="number" name="celular" id="celular">
-                    </div>
+                
+                <!--<div class="my-3 col">
+                    <label class="form-label" for="">Telefone Fixo:</label>
+                    <input class="form-control" type="number" name="telefone" id="telefone">
+                </div>-->
+                <div class="my-3">
+                    <label class="form-label" for="">Celular:</label>
+                    <input class="form-control" type="number" name="celular" id="celular">
                 </div>
+                
                 <div class="my-3">
                     <label class="form-label" for="mensagem">Complemento:</label>
                     <textarea class="form-control" name="" id="" cols="30" rows="10" name="complemento" id="complemento"></textarea>
                 </div>
                 <div class="my-3">
-                    <input id="enviar" class="btn btn-primary" type="submit">
+                    <input id="enviar" class="btn btn-primary" type="submit" name="submit" id="submit">
+                </div>
+            </form>
+        </div>
+    </div>
+    <h2>Endereço</h2>
+    <div id="box">
+        <div class="container">
+            <hr>
+            <form class="p-3" action="" method="post">
+                <div class="my-3">
+                    <label class="form-label" for="">Némero: </label>
+                    <input class="form-control" type="number" name="numero" id="numero">
+                </div>
+                <div class="my-3">
+                    <label class="form-label" for="">Bairro</label>
+                    <input class="form-control" type="text" name="bairro" id="bairro">
+                </div>
+                <div class="my-3">
+                    <label class="form-label" for="">CEP</label>
+                    <input class="form-control" type="number" name="cep" id="cep">
                 </div>
             </form>
         </div>

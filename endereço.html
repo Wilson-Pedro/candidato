@@ -10,26 +10,35 @@
     <title>IEMA</title>
 </head>
 <body>
-    <h2 id="cdst">Cadastro</h2>
+    <header>
+        <h1 class="cdst">Cadastro</h1>
+    </header>
+    <h2 class="titulo">Endereço</h2>
     <div id="box">
         <div class="container">
-            <hr>
-            <form class="p-3" action="" method="post">
+            <form class="p-3" action=".php" method="post">
                 <div class="my-3">
                     <label class="form-label" for="">Némero: </label>
                     <input class="form-control" type="number" name="numero" id="numero">
                 </div>
+
                 <div class="my-3">
                     <label class="form-label" for="">Bairro</label>
                     <input class="form-control" type="text" name="bairro" id="bairro">
                 </div>
+
                 <div class="my-3">
                     <label class="form-label" for="">CEP</label>
                     <input class="form-control" type="number" name="cep" id="cep">
                 </div>
+
+                <div class="my-3">
+                    <label class="form-label" for="mensagem">Complemento:</label>
+                    <textarea class="form-control" name="" id="" cols="30" rows="10" name="complemento" id="complemento"></textarea>
+                </div>
             </form>
         </div>
     </div>
-    <a href="candidato.html">Voltar</a>
+    <a href="empresa.html">empresa</a>
 </body>
 </html>

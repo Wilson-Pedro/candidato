@@ -11,12 +11,13 @@
 </head>
 <body>
     <header>
-        <h2 id="cdst">Cadastro</h2>
+        <h1 class="cdst">Cadastro</h1>
     </header>
+    <h2 class="titulo">Candidato</h2>
     <div id="box">
         <div class="container">
             <hr>
-            <form class="p-3" action="" method="">
+            <form class="p-3" action=".php" method="post">
                 <div class="my-3">
                     <label class="form-label" for="">Nome Completo:</label>
                     <input class="form-control" type="text" name="nome" id="nome">
@@ -24,7 +25,7 @@
                 <div class="row">
                     <div class="my-3 col">
                         <label class="form-label" for="">Data de Nascimento:</label>
-                        <input class="form-control" type="date" name="dataNascimento" id="dataNascimento">
+                        <input class="form-control" type="date" name="dataNasc" id="dataNasc">
                     </div>
                     <div class="my-3 col">
                         <label class="form-label" for="">CPF:</label>
@@ -59,35 +60,10 @@
                     <input class="form-control" type="number" name="celular" id="celular">
                 </div>
                 
-                <div class="my-3">
-                    <label class="form-label" for="mensagem">Complemento:</label>
-                    <textarea class="form-control" name="" id="" cols="30" rows="10" name="complemento" id="complemento"></textarea>
-                </div>
-                <div class="my-3">
-                    <input id="enviar" class="btn btn-primary" type="submit" name="submit" id="submit">
-                </div>
+                
             </form>
         </div>
     </div>
-    <h2>Endereço</h2>
-    <div id="box">
-        <div class="container">
-            <hr>
-            <form class="p-3" action="" method="post">
-                <div class="my-3">
-                    <label class="form-label" for="">Némero: </label>
-                    <input class="form-control" type="number" name="numero" id="numero">
-                </div>
-                <div class="my-3">
-                    <label class="form-label" for="">Bairro</label>
-                    <input class="form-control" type="text" name="bairro" id="bairro">
-                </div>
-                <div class="my-3">
-                    <label class="form-label" for="">CEP</label>
-                    <input class="form-control" type="number" name="cep" id="cep">
-                </div>
-            </form>
-        </div>
-    </div>
+    <a href="endereço.html">endereço</a>
 </body>
 </html>

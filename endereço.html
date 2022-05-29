@@ -14,31 +14,40 @@
         <h1 class="cdst">Cadastro</h1>
     </header>
     <h2 class="titulo">Endereço</h2>
-    <div id="box">
-        <div class="container">
-            <form class="p-3" action=".php" method="post">
-                <div class="my-3">
-                    <label class="form-label" for="">Némero: </label>
-                    <input class="form-control" type="number" name="numero" id="numero">
-                </div>
+    <div class="container">
+        <form class="p-3" action=".php" method="post" id="box">
+            <div class="my-3">
+                <label class="form-label" for="">Endereço:</label>
+                <input class="form-control" type="text" name="endereco" id="endereco">
+            </div>
 
-                <div class="my-3">
-                    <label class="form-label" for="">Bairro</label>
-                    <input class="form-control" type="text" name="bairro" id="bairro">
-                </div>
+            <div class="my-3">
+                <label class="form-label" for="">CPF:</label>
+                <input class="form-control" type="number" name="cpf" id="cpf">
+            </div>
 
-                <div class="my-3">
-                    <label class="form-label" for="">CEP</label>
-                    <input class="form-control" type="number" name="cep" id="cep">
-                </div>
+            <div class="my-3">
+                <label class="form-label" for="">Logradouro:</label>
+                <input class="form-control" type="number" name="logradouro" id="logradouro">
+            </div>
 
-                <div class="my-3">
-                    <label class="form-label" for="mensagem">Complemento:</label>
-                    <textarea class="form-control" name="" id="" cols="30" rows="10" name="complemento" id="complemento"></textarea>
-                </div>
-            </form>
-        </div>
+            <div class="my-3">
+                <label class="form-label" for="">Número:</label>
+                <input class="form-control" type="number" name="numero" id="numero">
+            </div>
+
+            <div class="my-3">
+                <label class="form-label" for="">Bairro:</label>
+                <input class="form-control" type="text" name="bairro" id="bairro">
+            </div>
+
+            <div class="my-3">
+                <label class="form-label" for="">CEP:</label>
+                <input class="form-control" type="number" name="cep" id="cep">
+            </div>
+
+            <button id="enviar" type="submit">Enviar</button>
+        </form>
     </div>
-    <a href="empresa.html">empresa</a>
 </body>
 </html>

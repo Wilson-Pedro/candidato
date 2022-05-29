@@ -31,6 +31,7 @@ header {
     background-color: rgba(194, 189, 189, 0.6);
     width: 80vw;
     border-radius: 0.8rem;
+    position: relative;
 }
 
 label {
@@ -47,4 +48,20 @@ h2.titulo {
 #enviar {
     display: block;
     margin: auto;
+}
+
+button#enviar {
+    outline: none;
+    border: none;
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, rgb(0, 81, 255), rgb(0, 132, 255));
+    color: white;
+    font-weight: bold;
+}
+
+button#enviar:hover {
+    background: linear-gradient(to right, rgb(3, 69, 211), rgb(2, 105, 201));
 }

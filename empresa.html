@@ -14,37 +14,39 @@
         <h1 class="cdst">Cadastro</h1>
     </header>
     <h2 class="titulo">Empresa</h2>
-    <div id="box">
-        
-        <div class="container">
-            <form action=".php" method="post" class="p-3">
-                <div class="my-3">
-                    <label for="" class="form-label">Empregador:</label>
-                    <input type="text" class="form-control" name="empregador" id="empregador">
-                </div>
-                <div class="my-3">
-                    <label for="" class="form-label">Cargo:</label>
-                    <input type="text" class="form-control" name="cargo" id="cargo">
-                </div>
-                <div class="my-3">
-                    <label for="" class="form-label">Razão Social:</label>
-                    <input type="text" class="form-control" name="razao" id="razao">
-                </div>
-                <div class="my-3">
-                    <label for="" class="form-label">Nome Fantasia:</label>
-                    <input type="text" class="form-control" name="nomeFan" id="nomeFan">
-                </div>
-                <div class="my-3">
-                    <label for="" class="form-label">Tipo:</label>
-                    <input type="text" class="form-control" name="tipo" id="tipo">
-                </div>
-                <div class="my-3">
-                    <label for="" class="form-label">CNPJ:</label>
-                    <input type="number" class="form-control" name="cnpj" id="cnpj">
-                </div>
-            </form>
-        </div>
+    <div class="container">
+        <form action=".php" method="post" class="p-3" id="box">
+            <div class="my-3">
+                <label for="" class="form-label">CNPJ:</label>
+                <input type="number" class="form-control" name="cnpj" id="cnpj">
+            </div>
+
+            <div class="my-3">
+                <label for="" class="form-label">Razão Social:</label>
+                <input type="text" class="form-control" name="razao" id="razao">
+            </div>
+
+            <div class="my-3">
+                <label for="" class="form-label">Nome Fantasia:</label>
+                <input type="text" class="form-control" name="nomeFan" id="nomeFan">
+            </div>
+
+            <div class="my-3">
+                <label for="" class="form-label">Tipo:</label>
+                <input type="text" class="form-control" name="tipo" id="tipo">
+            </div>
+
+            <!--<div class="my-3">
+                <label for="" class="form-label">Empregador:</label>
+                <input type="text" class="form-control" name="empregador" id="empregador">
+            </div>
+
+            <div class="my-3">
+                <label for="" class="form-label">Cargo:</label>
+                <input type="text" class="form-control" name="cargo" id="cargo">
+            </div>-->
+            <button id="enviar" type="submit">Enviar</button>
+        </form>
     </div>
-    <a href="empregador.html">empregador</a>
 </body>
 </html>

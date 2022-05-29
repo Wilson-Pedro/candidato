@@ -14,56 +14,37 @@
         <h1 class="cdst">Cadastro</h1>
     </header>
     <h2 class="titulo">Candidato</h2>
-    <div id="box">
-        <div class="container">
-            <hr>
-            <form class="p-3" action=".php" method="post">
-                <div class="my-3">
-                    <label class="form-label" for="">Nome Completo:</label>
-                    <input class="form-control" type="text" name="nome" id="nome">
+    <div class="container">
+        <form class="p-4" action=".php" method="post" id="box">
+            <div class="my-3">
+                <label class="form-label" for="">Nome Completo:</label>
+                <input class="form-control" type="text" name="nome" id="nome">
+            </div>
+            <div class="row">
+                <div class="my-3 col">
+                    <label class="form-label" for="">Data de Nascimento:</label>
+                    <input class="form-control" type="date" name="dataNasc" id="dataNasc">
                 </div>
-                <div class="row">
-                    <div class="my-3 col">
-                        <label class="form-label" for="">Data de Nascimento:</label>
-                        <input class="form-control" type="date" name="dataNasc" id="dataNasc">
-                    </div>
-                    <div class="my-3 col">
-                        <label class="form-label" for="">CPF:</label>
-                        <input class="form-control" type="number" name="cpf" id="cpf">
-                    </div>
+                <div class="my-3 col">
+                    <label class="form-label" for="">CPF:</label>
+                    <input class="form-control" type="number" name="cpf" id="cpf">
                 </div>
-                <!--<div class="row">
-                    <div class="my-3 col">
-                        <label class="form-label" class="form-label" for="">Rua:</label>
-                        <input class="form-control" type="text" name="rua" id="rua">
-                    </div>
-                    <div class="my-3 col">
-                        <label class="form-label" for="">Bairro:</label>
-                        <input class="form-control" type="text" name="bairro" id="bairro">
-                    </div>
-                </div>-->
-                <div class="my-3">
-                    <label class="form-label" for="">CEP:</label>
-                    <input class="form-control" type="number" name="cep" id="cep">
-                </div>
-                <div class="my-3">
-                    <label class="form-label" for="">Email:</label>
-                    <input class="form-control" type="email" name="email" id="email">
-                </div>
-                
-                <!--<div class="my-3 col">
-                    <label class="form-label" for="">Telefone Fixo:</label>
-                    <input class="form-control" type="number" name="telefone" id="telefone">
-                </div>-->
-                <div class="my-3">
-                    <label class="form-label" for="">Celular:</label>
-                    <input class="form-control" type="number" name="celular" id="celular">
-                </div>
-                
-                
-            </form>
-        </div>
+            </div>
+            <!--<div class="my-3">
+                <label class="form-label" for="">CEP:</label>
+                <input class="form-control" type="number" name="cep" id="cep">
+            </div>-->
+            <div class="my-3">
+                <label class="form-label" for="">Email:</label>
+                <input class="form-control" type="email" name="email" id="email">
+            </div>
+        
+            <div class="my-3">
+                <label class="form-label" for="">Celular:</label>
+                <input class="form-control" type="number" name="celular" id="celular">
+            </div>
+            <button id="enviar" type="submit">Enviar</button>
+        </form>
     </div>
-    <a href="endereço.html">endereço</a>
 </body>
 </html>

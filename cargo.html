@@ -15,16 +15,11 @@
     </header>
     <h2 class="titulo">Cargo</h2>
     <div class="container">
-        <form class="p-3" action="cargo.php" method="post" id="form1" id="box">
+        <form class="p-4" id="box">
             <div class="my-3">
                 <label class="form-label" for="">Empregador:</label>
                 <input class="form-control" type="text" name="empregador" id="empregador">
             </div>
-
-            <!--<div class="my-3">
-                <label class="form-label" for="">Cargo:</label>
-                <input class="form-control" type="text" name="cargo" id="cargo">
-            </div>-->
 
             <div class="my-3">
                 <label class="form-label" for="">Nome:</label>
@@ -51,8 +46,22 @@
                 <label class="form-label" for="mensagem">Area Profissional:</label>
                 <input class="form-control" type="text" name="areaP" id="areaP">
             </div>
-            <button form="form1" id="enviar" type="submit">Enviar</button>
+            <button form="form1" id="enviar" type="submit" onclick="clicar()">Enviar</button>
         </form>
+        <script>         
+        function clicar(){             
+            var empregador = document.getElementById('empregador')             
+            var empresa = document.getElementById('empresa')             
+            var nome = document.getElementById('nome')             
+            var areaP = document.getElementById('areaP')             
+            var cpf = document.getElementById('cpf')             
+            var cnpj = document.getElementById('cnpj')      
+
+            if(empregador.value.length == 0 || empresa.value.length == 0 || nome.value.length == 0 || areaP.value.length == 0 || cpf.value.length == 0 || cnpj.value.length == 0){                 
+                alert('Por favor preencha todos os campos')             
+            }         
+        }     
+        </script>
     </div>
 </body>
 </html>

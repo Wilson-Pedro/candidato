@@ -15,7 +15,7 @@
     </header>
     <h2 class="titulo">Empresa</h2>
     <div class="container">
-        <form action=".php" method="post" class="p-3" id="box">
+        <form class="p-3" id="box">
             <div class="my-3">
                 <label for="" class="form-label">CNPJ:</label>
                 <input type="number" class="form-control" name="cnpj" id="cnpj">
@@ -45,8 +45,20 @@
                 <label for="" class="form-label">Cargo:</label>
                 <input type="text" class="form-control" name="cargo" id="cargo">
             </div>-->
-            <button id="enviar" type="submit">Enviar</button>
+            <button id="enviar" onclick="clicar()">Enviar</button>
         </form>
     </div>
+    <script>
+        function clicar(){
+            var cpnj = document.getElementById('cpnj');
+            var razao = document.getElementById('razao');
+            var nomeFan = document.getElementById('nomeFan');
+            var tipo = document.getElementById('tipo');
+
+            if (cpnj.value.length == 0 || razao.value.length == 0 || nomeFan.value.length == 0 || tipo.value.length == 0){
+                alert('Preencha os seus dados corretamente')
+            }
+        }
+    </script>
 </body>
 </html>

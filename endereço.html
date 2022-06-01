@@ -15,7 +15,7 @@
     </header>
     <h2 class="titulo">Endereço</h2>
     <div class="container">
-        <form class="p-3" action=".php" method="post" id="box">
+        <form class="p-3" id="box">
             <div class="my-3">
                 <label class="form-label" for="">Endereço:</label>
                 <input class="form-control" type="text" name="endereco" id="endereco">
@@ -46,8 +46,22 @@
                 <input class="form-control" type="number" name="cep" id="cep">
             </div>
 
-            <button id="enviar" type="submit">Enviar</button>
+            <button id="enviar" type="submit" onclick="clicar()">Enviar</button>
         </form>
     </div>
+    <script>
+        var endereco = document.getElementById('endereco');
+        var cpf = document.getElementById('cpf');
+        var logradouro = document.getElementById('logradouro');
+        var numero = document.getElementById('numero');
+        var bairro = document.getElementById('bairro');
+        var cep = document.getElementById('cep');
+
+        function clicar(){
+            if (cpf.value.length == 0 || endereco.value.length == 0 || cep.value.length == 0 || logradouro.value.length == 0 || numero.value.length == 0 || bairro.value.length == 0){
+                alert('Preencha os seus dados corretamente')
+            }
+        }
+    </script>
 </body>
 </html>

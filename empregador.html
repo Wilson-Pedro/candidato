@@ -15,7 +15,7 @@
     </header>
     <h2 class="titulo">Empregador</h2>
     <div class="container">
-        <fomr class="p-4" action=".php" method="post" id="box">
+        <fomr class="p-4" id="box">
             <div class="my-3">
                 <label for="" class="form-label">CPF:</label>
                 <input type="text" class="form-control" name="cpf" id="cpf">
@@ -29,8 +29,19 @@
                 <label for="" class="form-label">Nome:</label>
                 <input type="text" class="form-control" name="nome" id="nome">
             </div>
-            <button id="enviar" type="submit">Enviar</button>
-        </fomr>
+            <button id="enviar" type="submit" onclick="clicar()">Enviar</button>
+        </form>
     </div> 
+    <script>
+        var cpf = document.getElementById('cpf');
+        var nome = document.getElementById('nome');
+        var cpnj = document.getElementById('cpnj');
+
+        function clicar(){
+            if (cpf.value.length == 0 || nome.value.length == 0 || cpnj.value.length == 0){
+                alert('Preencha os seus dados corretamente')
+            }
+        }
+    </script>
 </body>
 </html>

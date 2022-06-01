@@ -13,9 +13,9 @@
     <header>
         <h1 class="cdst">Cadastro</h1>
     </header>
-    <h2 class="titulo">Empregador</h2>
+    <h2 class="titulo">Conta</h2>
     <div class="container">
-        <fomr class="p-3" action=".php" method="post" id="box">
+        <fomr class="p-3" id="box">
             <!--<div class="my-3">
                 <label for="" class="form-label">Conta:</label>
                 <input type="text" class="form-control" name="conta" id="conta">
@@ -35,8 +35,19 @@
                 <label for="" class="form-label">Senha:</label>
                 <input type="password" class="form-control" name="senha" id="senha">
             </div>
-            <button id="enviar" type="submit">Enviar</button>
+            <button id="enviar" type="submit" onclick="clicar()">Enviar</button>
         </fomr>
     </div>
+    <script>
+        var cpf = document.getElementById('cpf');
+        var nomeU = document.getElementById('nomeU');
+        var senha = document.getElementById('senha');
+
+        function clicar(){
+            if (cpf.value.length == 0 || nomeU.value.length == 0 || senha.value.length == 0){
+                alert('Preencha os seus dados corretamente')
+            }
+        }
+    </script>
 </body>
 </html>

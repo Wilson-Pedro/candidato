@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="shortcut icon" href="logoIEMA.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>IEMA</title>
 </head>
 <body>
@@ -15,11 +16,12 @@
     </header>
     <h2 class="titulo">Candidato</h2>
     <div class="container">
-        <form class="p-4" action=".php" method="post" id="box">
+        <form class="p-4" id="box">
             <div class="my-3">
                 <label class="form-label" for="">Nome Completo:</label>
                 <input class="form-control" type="text" name="nome" id="nome">
             </div>
+
             <div class="row">
                 <div class="my-3 col">
                     <label class="form-label" for="">Data de Nascimento:</label>
@@ -30,10 +32,7 @@
                     <input class="form-control" type="number" name="cpf" id="cpf">
                 </div>
             </div>
-            <!--<div class="my-3">
-                <label class="form-label" for="">CEP:</label>
-                <input class="form-control" type="number" name="cep" id="cep">
-            </div>-->
+
             <div class="my-3">
                 <label class="form-label" for="">Email:</label>
                 <input class="form-control" type="email" name="email" id="email">
@@ -43,8 +42,20 @@
                 <label class="form-label" for="">Celular:</label>
                 <input class="form-control" type="number" name="celular" id="celular">
             </div>
-            <button id="enviar" type="submit">Enviar</button>
+            <button onclick="clicar()" id="enviar">Enviar</button>
         </form>
     </div>
+    <script>
+        var nome = document.getElementById('nome');
+        var data = document.getElementById('dataNasc');
+        var email = document.getElementById('email');
+        var celular = document.getElementById('celular');
+
+        function clicar(){
+            if (nome.value.length == 0 || data.value.length == 0 || email.value.length == 0 || celular.value.length == 0){
+                alert('Preencha os seus dados corretamente')
+            }
+        }
+    </script>
 </body>
 </html>

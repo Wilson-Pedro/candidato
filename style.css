@@ -16,7 +16,7 @@ header {
     height: 20vh;
 }
 
-.cdst {
+header > h1 {
     color: white;
     text-align: center;
     font-size: 45pt;
@@ -24,9 +24,35 @@ header {
     font-weight: bold;
 }
 
+nav {
+    background-color: rgb(54, 53, 53);
+    padding: 1%;
+}
+
+nav > a {
+    text-decoration: none;
+    flex-direction: row;
+    margin: auto;
+    color: white;
+    font-weight: bold;
+    margin-left: 3%;
+    padding: 1%;
+    border-radius: 3px;
+}
+
+nav > a:hover {
+    background-color: rgb(163, 161, 161);
+    color: rgb(17, 17, 17);
+}
+
+.marcado {
+    background-color: rgb(163, 161, 161);
+    color: rgb(17, 17, 17);
+}
+
 #box {
     display: block;
-    margin: auto;
+    margin-top: 7%;
     margin-bottom: 1rem;
     background-color: rgba(194, 189, 189, 0.6);
     width: 80vw;
